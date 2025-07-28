@@ -24,7 +24,7 @@ const port = process.env.PORT || 3000;
 connectDB();
 
 app.use(express.json());
-const allowedOrigins = 'http://localhost:5173';
+const allowedOrigins = 'https://notezy-frontend-uxwj.onrender.com';
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
